@@ -1,0 +1,26 @@
+#free-shipping-banner {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf1f7;
+  color: #575757;
+}
+
+.progressBar{
+  width: 100%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  opacity: 0;
+  display: block;
+  transition: opacity 0.5s, height 0.5s;
+
+  & span{
+    height: 100%;
+    width: 0;
+    max-width: 100%;
+    background: #0a6767;
+    display: block;
+    transition: width 0.5s;
+  }
+}

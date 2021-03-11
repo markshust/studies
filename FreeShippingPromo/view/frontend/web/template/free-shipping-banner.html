@@ -1,0 +1,12 @@
+<div>
+  <span data-bind="text: message"></span>
+  <div
+    class="progressBar"
+    data-bind="style: {
+      opacity: progress() <= 0 ? '0' : '1',
+      height: progress() <= 0 ? '0' : '20px' }"
+  >
+
+    <span data-bind="style: { width: progress() }"></span>
+  </div>
+</div>
